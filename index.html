@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programming Hero project</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <style>
 
     *{
         margin: 5px;
+       /* border-right: 10px solid rgb(187, 20, 20);*/
         
+    
         
     }
     .body{
@@ -24,6 +27,9 @@
     }
     .bolder{
         font-weight: 50px;
+        border-radius: 10px;
+        border:5px solid red;
+        width:50%
     }  
     
     .colorful,.attention {
@@ -39,8 +45,18 @@
     }
 </style>
 <body>
+
+
+
+<br>
+
+
     <h1 style="border: 2px solid rgb(25, 0, 255);border-radius: 20px ;background-color: blueviolet;color:blanchedalmond;text-align: center;">Practice session 01 </h1> 
     <h2  style="text-align: center; color: green; text-decoration: underline; text-decoration-thickness: 4px;">CSS Styling Types </h1>
+
+<input type="text" placeholder="Name">
+<input type="password">
+<a href="https://example.com">Link</a>
 
     <li id="highlight">Inline</li>
     <li id="highlight">Internal</li>
@@ -53,12 +69,12 @@
    
   <h4 style="background-color: lightblue; width: 50%;">Description of Prophet Muhummad(S)</h4>
   
-  <p style="color:brown;font-weight:bold;width: 50%;">He was innocently bright and had broad countenance .His manners were fine .Neither his belly bulging out nor was his head deprived of hair . He had black attractive eyes finely arched by continuous eyebrows. His hair glossy and black, inclined to curl, he wore long. His voice was extremely commanding. His head was large., well formed and set on a slender neck. <span class="attention"> His expression was very sweet and distinct. </span> His speech was well set and free from the use of superfluous words, as if it were a rosary of beads. His stature was neither too high nor too small to look repulsive. He was a twig amongst the two, singularly bright and fresh. He was always  surrounded by His companions. Whenever he uttered something ,the listeners would hear him with rapt attention and whenever he issued any command , they vied with each other in carrying it out. He was master and commander. His utterances were marked by truth and sincerity , free from all kinds of falsehood and lies.[Za’d Al Ma’ad 2/45]”</p>
+  <p style="color:brown;font-weight:bold;width: 50%; text-align: justify;">He was innocently bright and had broad countenance .His manners were fine .Neither his belly bulging out nor was his head deprived of hair . He had black attractive eyes finely arched by continuous eyebrows. His hair glossy and black, inclined to curl, he wore long. His voice was extremely commanding. His head was large., well formed and set on a slender neck. <span class="attention"> His expression was very sweet and distinct. </span> His speech was well set and free from the use of superfluous words, as if it were a rosary of beads. His stature was neither too high nor too small to look repulsive. He was a twig amongst the two, singularly bright and fresh. He was always  surrounded by His companions. Whenever he uttered something ,the listeners would hear him with rapt attention and whenever he issued any command , they vied with each other in carrying it out. He was master and commander. His utterances were marked by truth and sincerity , free from all kinds of falsehood and lies.[Za’d Al Ma’ad 2/45]”</p>
 
   <h3 style="text-decoration: underline;text-decoration-thickness: 2px;"> CSS styling -Internal </h3>
   
 
-   <p class="body">What would the  key of geeting stronger in any subject. <br>
+   <p class="bolder"style="text-align: justify;width:50%;">What would the  key of geeting stronger in any subject. <br>
       <br>
     The key to getting stronger in any subject is consistent practice and dedication. Regularly engaging with the material, seeking to understand concepts deeply, and applying knowledge through exercises or real-world applications can significantly enhance one's proficiency. Additionally, setting clear goals, staying motivated, and being open to feedback are crucial components of effective learning and improvement.
    </p>
@@ -80,7 +96,7 @@
 
    <p class="attention">Key points of CSS styling -External.
     
-    <ul>
+    <ul style="width:50%">
         <li>CSS stands for Cascading Style Sheets.</li>
         <li>CSS is used to style and layout web pages.</li>
         <li>CSS can control the color, font, spacing, and positioning of elements on a webpage.</li>
@@ -89,8 +105,8 @@
         <li>CSS rules are made up of selectors and declarations, where selectors target HTML elements and declarations define the styles to be applied.</li>
     </ul>
     <br>
-    
-    <div>Here adding some more features of externa css styles
+
+    <div class="bolder">Here adding some more features of externa css styles
         <ul>
             <li>CSS supports various units of measurement, including pixels (px), ems (em), rems (rem), percentages (%), and viewport units (vw, vh).</li>
             <li>CSS allows for responsive design through media queries, enabling web pages to adapt to different screen sizes and devices.</li>
@@ -99,6 +115,16 @@
         </ul>
     </div>
 </p>
+<br>
+
+<h2 id="biplob">Css Box model</h2>
+
+<ol>
+    <li>Content Area</li>
+    <li>Padding</li>
+    <li>Border</li>
+    <li>Margin</li>
+</ol>
 
 </body>
 </html>
