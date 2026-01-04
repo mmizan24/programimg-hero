@@ -44,6 +44,7 @@
         font-size: 50px;
     }
 </style>
+<header>Hello</header>
 <body>
 
 <script>
@@ -56,9 +57,14 @@
 <h1>Welcome 🎉</h1>
 <p>You are successfully logged in.</p>
 
-<button onclick="logout()">Logout</button>
+<button id="logout-btn" onclick="logout()">Logout</button>
 
-<script src="css/javascript/script.js"></script>
+<script>
+    function logout() {
+        localStorage.setItem("isLoggedIn", "false");
+        window.location.href = "login.html";
+    }
+</script>
 
 
 <br>
