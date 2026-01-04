@@ -1,8 +1,29 @@
-body{
-    
-    background-color:beige
-    
+body {
+    margin: 0;
+    background-color: beige;
+    min-height: 100vh;
+    position: relative;
 }
+
+/* Watermark background */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("../images/bip.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1800px;
+    opacity: 0.15;      /* set visible opacity (or use 1 to test) */
+    z-index: -1;
+    pointer-events: none;
+    
+
+}
+
+
+    
+
 #biplob{
     color:blue;
     text-align:left;
