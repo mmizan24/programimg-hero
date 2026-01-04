@@ -16,6 +16,16 @@
         margin: 5px;
         padding: 5px;
     }
+    .bolder{
+        font-weight: 50px;
+    }  
+    
+    .colorful,.attention {
+        color:blanchedalmond;
+        background-color:blue;
+        width: 50%;
+        border-radius: 50px;
+    }
     #highlight {
         color: red;
         font-weight: bolder;
@@ -23,7 +33,7 @@
     }
 </style>
 <body>
-    <h1 style="border: 2px solid rgb(25, 0, 255);border-radius: 20px ;background-color: blueviolet;color:blanchedalmond">Practice session 01 </h1> 
+    <h1 style="border: 2px solid rgb(25, 0, 255);border-radius: 20px ;background-color: blueviolet;color:blanchedalmond;text-align: center;">Practice session 01 </h1> 
     <h2  style="text-align: center; color: green; text-decoration: underline; text-decoration-thickness: 4px;">CSS Styling Types </h1>
 
     <li id="highlight">Inline</li>
@@ -37,7 +47,7 @@
    
   <h4 style="background-color: lightblue; width: 50%;">Description of Prophet Muhummad(S)</h4>
   
-  <p style="color:brown;font-weight:bold;width: 50%;">He was innocently bright and had broad countenance .His manners were fine .Neither his belly bulging out nor was his head deprived of hair . He had black attractive eyes finely arched by continuous eyebrows. His hair glossy and black, inclined to curl, he wore long. His voice was extremely commanding. His head was large., well formed and set on a slender neck. His expression was very sweet and distinct. His speech was well set and free from the use of superfluous words, as if it were a rosary of beads. His stature was neither too high nor too small to look repulsive. He was a twig amongst the two, singularly bright and fresh. He was always  surrounded by His companions. Whenever he uttered something ,the listeners would hear him with rapt attention and whenever he issued any command , they vied with each other in carrying it out. He was master and commander. His utterances were marked by truth and sincerity , free from all kinds of falsehood and lies.[Za’d Al Ma’ad 2/45]”</p>
+  <p style="color:brown;font-weight:bold;width: 50%;">He was innocently bright and had broad countenance .His manners were fine .Neither his belly bulging out nor was his head deprived of hair . He had black attractive eyes finely arched by continuous eyebrows. His hair glossy and black, inclined to curl, he wore long. His voice was extremely commanding. His head was large., well formed and set on a slender neck. <span class="attention"> His expression was very sweet and distinct. </span> His speech was well set and free from the use of superfluous words, as if it were a rosary of beads. His stature was neither too high nor too small to look repulsive. He was a twig amongst the two, singularly bright and fresh. He was always  surrounded by His companions. Whenever he uttered something ,the listeners would hear him with rapt attention and whenever he issued any command , they vied with each other in carrying it out. He was master and commander. His utterances were marked by truth and sincerity , free from all kinds of falsehood and lies.[Za’d Al Ma’ad 2/45]”</p>
 
   <h3 style="text-decoration: underline;text-decoration-thickness: 2px;"> CSS styling -Internal </h3>
   
@@ -46,10 +56,23 @@
       <br>
     The key to getting stronger in any subject is consistent practice and dedication. Regularly engaging with the material, seeking to understand concepts deeply, and applying knowledge through exercises or real-world applications can significantly enhance one's proficiency. Additionally, setting clear goals, staying motivated, and being open to feedback are crucial components of effective learning and improvement.
    </p>
+   
+   <br>
+   <br>
+   
+
+   <li class="bolder colorful">CSS SELECTOR</li>
+    <ul>
+        <li>Element Selector</li>
+        <li>ID Selector >>> you have to use sign[#]</li>
+        <li>Class Selector --> you have to use sign[.]</li>
+        <li>Group Selector>>> you have to use sign[+]</li>
+        <li>Universal Selector>>> you have to use sign[*]</li>
+    </ul>
 
     <h3 style="text-decoration: underline;text-decoration-thickness: 2px;"> CSS styling -External </h3>
 
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, provident dolores corrupti maiores, doloribus commodi nam porro quia totam nihil itaque odit numquam ad blanditiis laudantium necessitatibus facilis? Qui, nesciunt. </p>
+   <p class="attention">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, provident dolores corrupti maiores, doloribus commodi nam porro quia totam nihil itaque odit numquam ad blanditiis laudantium necessitatibus facilis? Qui, nesciunt. </p>
 
 </body>
 </html>
