@@ -66,6 +66,23 @@
     }
 </script>
 
+<!-- Live date centered in viewport -->
+<div id="live-date" aria-live="polite"></div>
+
+<script>
+    function updateLiveDate() {
+        const el = document.getElementById('live-date');
+        if (!el) return;
+        const now = new Date();
+        // Format: Weekday, Month Day, Year — HH:MM:SS
+        const formatted = now.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
+            + ' — ' + now.toLocaleTimeString();
+        el.textContent = formatted;
+    }
+    updateLiveDate();
+    setInterval(updateLiveDate, 1000);
+</script>
+
 
 <br>
 

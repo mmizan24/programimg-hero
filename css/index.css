@@ -49,3 +49,20 @@ body::before {
 #logout-btn:hover {
     background-color: #d32f2f;
 }
+
+/* Centered live date */
+#live-date {
+    position:fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 900;
+    background: rgba(255, 255, 255, 0.8);
+    color: #222;
+    padding: 14px 18px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    font-size: 1.25rem;
+    text-align: center;
+    min-width: 280px;
+}
