@@ -45,7 +45,19 @@
     }
 </style>
 <body>
+<script>
+    // Protect page
+    if (localStorage.getItem("isLoggedIn") !== "true") {
+        window.location.href = "login.html";
+    }
+</script>
 
+<h1>Welcome 🎉</h1>
+<p>You are successfully logged in.</p>
+
+<button onclick="logout()">Logout</button>
+
+<script src="css/javascript/script.js"></script>
 
 
 <br>
@@ -116,9 +128,6 @@
     </div>
 </p>
 <br>
-
-<h2 id="biplob">Css Box model</h2>
-
 <ol>
     <li>Content Area</li>
     <li>Padding</li>
